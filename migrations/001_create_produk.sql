@@ -4,3 +4,5 @@ CREATE TABLE  IF NOT EXISTS produk (
   harga INTEGER NOT NULL,
   stok INTEGER NOT NULL
 );
+
+-- membuat table produk
