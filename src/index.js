@@ -40,7 +40,7 @@ export default {
         return withCors(Response.json(results));
       }
 
-      // POST /produk
+      // POST /produk untuk menambahkan produk baru
       if (url.pathname === "/produk" && req.method === "POST") {
         const { nama, harga, stok } = await req.json();
         await db
