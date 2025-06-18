@@ -6,7 +6,7 @@ export default {
     // Fungsi bantu untuk response dengan header CORS
     function withCors(response) {
       const newHeaders = new Headers(response.headers);
-      newHeaders.set("Access-Control-Allow-Origin", "*"); // Bisa diganti dengan domain frontend, misal "http://localhost:5173"
+      newHeaders.set("Access-Control-Allow-Origin", "*");
       newHeaders.set(
         "Access-Control-Allow-Methods",
         "GET,POST,PUT,DELETE,OPTIONS"

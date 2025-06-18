@@ -5,4 +5,3 @@ CREATE TABLE  IF NOT EXISTS produk (
   stok INTEGER NOT NULL
 );
 
--- membuat table produk
