@@ -62,7 +62,7 @@ export default {
         return withCors(new Response("Produk diperbarui"));
       }
 
-      // DELETE /produk
+      // DELETE /produk untuk menghapus produk
       if (url.pathname === "/produk" && req.method === "DELETE") {
         const { id } = await req.json();
         await db.prepare("DELETE FROM produk WHERE id = ?").bind(id).run();
