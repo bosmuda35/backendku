@@ -32,7 +32,7 @@ export default {
     }
 
     try {
-      // GET /produk
+      // GET /produk untuk mengambil data produk
       if (url.pathname === "/produk" && req.method === "GET") {
         const { results } = await db
           .prepare("SELECT * FROM produk ORDER BY id DESC")
