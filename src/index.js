@@ -50,7 +50,7 @@ export default {
         return withCors(new Response("Produk ditambahkan", { status: 201 }));
       }
 
-      // PUT /produk
+      // PUT /produk untuk memperbarui produk dan update stok
       if (url.pathname === "/produk" && req.method === "PUT") {
         const { id, nama, harga, stok } = await req.json();
         await db
